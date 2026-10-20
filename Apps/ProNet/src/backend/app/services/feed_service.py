@@ -45,7 +45,7 @@ class FeedService:
                 LIMIT :limit;
             """)
             params = {
-                "cursor_created_at": cursor_dt.isoformat() if cursor_dt else None,
+                "cursor_created_at": cursor_dt.strftime("%Y-%m-%d %H:%M:%S.%f") if cursor_dt else None,
                 "limit": fetch_limit
             }
         else:
@@ -75,7 +75,7 @@ class FeedService:
             """)
             params = {
                 "viewer_id": viewer_id,
-                "cursor_created_at": cursor_dt.isoformat() if cursor_dt else None,
+                "cursor_created_at": cursor_dt.strftime("%Y-%m-%d %H:%M:%S.%f") if cursor_dt else None,
                 "limit": fetch_limit
             }
 

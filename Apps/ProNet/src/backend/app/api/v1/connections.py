@@ -3,7 +3,7 @@ import uuid
 from typing import List
 from fastapi import APIRouter, Depends, status
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, or_, and_, update
+from sqlalchemy import select, or_, and_, update, func
 from sqlalchemy.orm import selectinload
 
 from app.core.database import get_db

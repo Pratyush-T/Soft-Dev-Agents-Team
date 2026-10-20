@@ -499,5 +499,5 @@ class BadgeCountsDTO(BaseModel):
 class UploadResponseDTO(BaseModel):
     file_url: str = Field(..., max_length=512)
     file_name: str = Field(..., max_length=255)
-    content_type: str = Field(..., max_length=64)
+    content_type: str = Field(..., max_length=128)
     size_bytes: int = Field(gt=0)

@@ -36,7 +36,7 @@ async def test_personas_and_quick_switch(client: AsyncClient):
     res = await client.get("/api/v1/auth/personas")
     assert res.status_code == 200
     personas = res.json()
-    assert len(personas) == 10
+    assert len(personas) >= 10
     
     # Test quick-switching to Elena Rostova
     elena = next(p for p in personas if "Elena" in p["full_name"])

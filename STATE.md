@@ -1,15 +1,15 @@
 # SDLC Master Pipeline State
 
-- **Project Name:** Not Initialized
-- **Current Phase:** Idle
-- **Active Gate Status:** None
+- **Project Name:** ProNet (Professional Network & Career Platform)
+- **Current Phase:** Phase 2 (System Architecture Ready)
+- **Active Gate Status:** Gate 1 Cleared (Pass 2 PRD Compiled)
 - **QA Remediation Loop Count:** 0 / 3
 - **Audit Remediation Loop Count:** 0 / 3
 
 ## 1. Agent Execution Matrix
 | ID | Agent Name | Status | Required Input | Target Output Artifact | Last Updated |
 |---|---|---|---|---|---|
-| 01 | `01_product_spec` | `[ ] Pending` | User Charter | `docs/01_prd.md` | - |
+| 01 | `01_product_spec` | `[x] Completed` | User Charter + Gate 1 Answers | `docs/01_prd.md` | 2026-10-20 |
 | 02 | `02_system_architect` | `[ ] Pending` | `01_prd.md` | `docs/02_architecture.md` | - |
 | 03 | `03_data_architect` | `[ ] Pending` | `01`, `02` | `docs/03_data_schema.md` | - |
 | 04 | `04_api_designer` | `[ ] Pending` | `01`, `02`, `03` | `docs/04_api_contracts.md` | - |
@@ -24,4 +24,9 @@
 - *None*
 
 ## 3. Architectural Decision Log
-- *Awaiting Phase 1 initialization.*
+- **2026-10-20 (Gate 1 Cleared):** User approved all 5 architectural decisions:
+  1. Global visibility with 1st-degree boosted, Recent vs. Top toggle.
+  2. 2-Level comment threading (Post -> Comment -> Reply) with moderation permissions.
+  3. FastAPI WebSockets for messaging and live unread counts.
+  4. Profile snapshot auto-fill + cover note + optional resume upload (<5MB).
+  5. Full connection lifecycle (Send/Accept/Ignore/Cancel/Disconnect) + mutual connection 2nd-degree badge.

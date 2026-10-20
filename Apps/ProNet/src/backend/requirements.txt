@@ -1,0 +1,34 @@
+# ProNet Backend Locked Dependencies (Python 3.11+)
+# Core Web & ASGI Gateway
+fastapi==0.110.0
+uvicorn[standard]==0.28.0
+starlette==0.36.3
+pydantic==2.6.4
+pydantic-settings==2.2.1
+email-validator>=2.0.0
+
+# Database & ORM
+SQLAlchemy==2.0.28
+aiosqlite==0.20.0
+alembic==1.13.1
+
+# Security, Hashing & Cryptography
+bcrypt==4.1.2
+passlib[bcrypt]==1.7.4
+PyJWT==2.8.0
+python-multipart==0.0.9
+
+# Content Sanitization & File Inspection
+bleach==6.1.0
+filetype==1.2.0
+
+# Real-Time & Utilities
+websockets==12.0
+python-dateutil==2.9.0.post0
+
+# Quality Assurance & Testing
+pytest==8.1.1
+pytest-asyncio==0.23.5
+httpx==0.27.0
+pytest-cov==4.1.0
+ruff==0.3.3
